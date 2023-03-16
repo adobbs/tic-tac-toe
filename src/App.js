@@ -1,5 +1,12 @@
+import Board from "./Board";
+
 function App() {
-  return <button className="square">X</button>;
+  
+  return (
+    <>
+      <Board />
+    </>
+  );
 }
 
 export default App;
