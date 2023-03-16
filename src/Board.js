@@ -1,22 +1,35 @@
+import Square from "./Square";
+
 function Board() {
+    const squares = [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+    ];
     
     return (
         <>
-        <div className="board-row">
-            <button className="square">1</button>
-            <button className="square">2</button>
-            <button className="square">3</button>
-        </div>
-        <div className="board-row">
-            <button className="square">4</button>
-            <button className="square">5</button>
-            <button className="square">6</button>
-        </div>
-        <div className="board-row">
-            <button className="square">7</button>
-            <button className="square">8</button>
-            <button className="square">9</button>
-        </div>
+            <div className="board-row">
+                <Square squareNumber={squares[0]} />
+                <Square squareNumber={squares[1]} />
+                <Square squareNumber={squares[2]} />
+            </div>
+            <div className="board-row">
+                <Square squareNumber={squares[3]} />
+                <Square squareNumber={squares[4]} />
+                <Square squareNumber={squares[5]} />
+            </div>
+            <div className="board-row">
+                <Square squareNumber={squares[6]} />
+                <Square squareNumber={squares[7]} />
+                <Square squareNumber={squares[8]} />
+            </div>
         </>
     );
 }
