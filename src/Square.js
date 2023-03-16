@@ -1,6 +1,11 @@
-function Square({ squareNumber }) {
+function Square({value, onSquareClick}) {
     return (
-        <button className="square">{squareNumber}</button>
+        <button 
+            className="square"
+            onClick={onSquareClick}
+        >
+            {value}
+        </button>
     );
 }
 
